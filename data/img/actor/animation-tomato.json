@@ -1,0 +1,83 @@
+﻿{"frames": {
+
+"animation - tomato0000":
+{
+	"frame": {"x":0,"y":0,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0001":
+{
+	"frame": {"x":74,"y":0,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0002":
+{
+	"frame": {"x":148,"y":0,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0003":
+{
+	"frame": {"x":0,"y":80,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0004":
+{
+	"frame": {"x":74,"y":80,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0005":
+{
+	"frame": {"x":148,"y":80,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0006":
+{
+	"frame": {"x":0,"y":160,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0007":
+{
+	"frame": {"x":74,"y":160,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+},
+"animation - tomato0008":
+{
+	"frame": {"x":148,"y":160,"w":74,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+	"sourceSize": {"w":74,"h":80}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "13.1.0.226",
+	"image": "animation-tomato.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":256},
+	"scale": "1"
+}
+}

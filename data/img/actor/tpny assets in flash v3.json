@@ -1,0 +1,75 @@
+﻿{"frames": {
+
+"animation - celebration0000":
+{
+	"frame": {"x":0,"y":0,"w":155,"h":136},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":71,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0001":
+{
+	"frame": {"x":165,"y":0,"w":146,"h":181},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":26,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0002":
+{
+	"frame": {"x":321,"y":0,"w":145,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0003":
+{
+	"frame": {"x":0,"y":214,"w":145,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0004":
+{
+	"frame": {"x":155,"y":214,"w":143,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":8,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0005":
+{
+	"frame": {"x":308,"y":214,"w":137,"h":191},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":16,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0006":
+{
+	"frame": {"x":0,"y":431,"w":140,"h":157},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":52,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+},
+"animation - celebration0007":
+{
+	"frame": {"x":150,"y":431,"w":150,"h":158},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":49,"w":168,"h":209},
+	"sourceSize": {"w":168,"h":209}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "13.1.0.226",
+	"image": "tpny assets in flash v3.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1024},
+	"scale": "1"
+}
+}
