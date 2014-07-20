@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Zoom Repeat</title>
+<style>
+	#about{
+		position: fixed;
+
+		padding-left:2em;
+		padding-right:2em;
+		padding-bottom:2em;
+		padding-top:.5em;
+		border-radius: .5em;
+		background-color: rgba(255,255,255,.5);
+		font-family: sans-serif;
+	}
+
+	.ratio{
+		position: absolute;
+		top: -100px;
+		left: 0px;
+	}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script src="js/lodash.js"></script>
+<script>
+
+// TODO
+// http://ricostacruz.com/jquery.transit/source/
+// $("#hello").css({ transformOrigin: '0 0' });
+
+function randomBetween(min, max) {
+  return Math.floor(Math.random() * max) + min;
+}
+
+$(document).ready(function(){
+
+	//
+	function prepareRandomColor(){
+		var rgba = [];
+		// a dark original color
+		rgba[0] = randomBetween(0, 255);
+		rgba[1] = randomBetween(0, 255);
+		rgba[2] = randomBetween(0, 255);
+		rgba[3] = 1;
+		return "rgba(" + rgba.join(",") + ")"
+	}
+
+	// set to the original color
+	$("body").css({"background-color":prepareRandomColor()});
+
+	// hide the instructions
+	setTimeout(function(){
+		$("#about").fadeOut();
+	}, 10000);
+
+	// zoom toward the interesting rectangles section
+	$("#ratio1").css({ transformOrigin: '75% 75%' });
+	$("#ratio2").css({ transformOrigin: '75% 75%' });
+	$("#ratio3").css({ transformOrigin: '75% 75%' });
+	$("#ratio4").css({ transformOrigin: '75% 75%' });
+
+	function zoomRepeat(idSelector){
+		// var clone = $("#ratio1").clone();
+		// $(idSelector).clone().appendTo("body")
+		$(idSelector).css({rotate:0, opacity:1, transform:"scale(1,1)"});
+		$(idSelector).transition({ scale: [3.0, 3.0], opacity:0, rotate:-15}, 2000,
+		function(){
+
+			//TODO: how to cleanup the unused DOM elements
+			// $("body").remove(this);
+			zoomRepeat(idSelector);
+		});
+	}
+
+	//
+	// tween takes two seconds
+	//
+	// start one loop
+	setTimeout(function(){zoomRepeat("#ratio4")}, 500);
+	// then another .5 second later to get overlap in the animations
+	setTimeout(function(){zoomRepeat("#ratio3")}, 1000);
+	// then another .5 second later to get overlap in the animations
+	setTimeout(function(){zoomRepeat("#ratio2")}, 1500);
+	// then another .5 second later to get overlap in the animations
+	setTimeout(function(){zoomRepeat("#ratio1")}, 2000);
+});
+
+</script>
+</head>
+<body>
+	<div id="about">
+		<h1>Repeating Zoom</h1>
+		<p>Trapped in the golden ratio!</p>
+		<nav>
+			<a href="index.html">Back to the Experiments List</a>
+		</nav>
+	</div>
+	<img id="ratio1" class="ratio" src="img/goldenratio.svg"/>
+	<img id="ratio2" class="ratio" src="img/goldenratio.svg"/>
+	<img id="ratio3" class="ratio" src="img/goldenratio.svg"/>
+	<img id="ratio4" class="ratio" src="img/goldenratio.svg"/>
+	<!-- <img id="ratio5" class="ratio" src="img/goldenratio.svg"/> -->
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29368319-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
