@@ -51,9 +51,9 @@ $(document).ready(function(){
 		utterance.voiceURI = "native";
 		utterance.volume = 1; // 0 to 1
 		utterance.rate = 1; // 0.1 to 10
-		utterance.pitch = 2; //0 to 2
+		utterance.pitch = 0; //0 to 2
 		utterance.text = $("#content p").text();
-		utterance.lang = "en-US";
+		utterance.lang = "French";
 
 		speechSynthesis.speak(utterance);
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
 <body>
 	<div id="content">
 		<h1>A Web Page Speaks!</h1>
-		<p>Welcome to this in-browser demonstration of speech synthesis. Sooooo good!</p>
+		<p>Okay browser let's talk!!!!</p>
 		<nav>
 			<a href="index.html">Back to the Experiments List</a>
 		</nav>
