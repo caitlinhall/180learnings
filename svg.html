@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>SVG!</title>
+		<style>
+			body{
+				font-family: Arial, sans-serif;
+				color: #5f5f5f;
+				letter-spacing: 2px;
+			}
+			#text {
+				margin:30px;
+				font-size: 22px;
+			}
+			h1{
+				font-size:90px;
+				margin:30px;
+				color: #F08080;
+			}
+			.coral{
+				color: #F08080;
+				font-size: 36px;
+			}
+			dl{
+				border-top: 1px solid #5f5f5f;
+				padding-top: 30px;
+			}
+			a{
+				color: #5f5f5f;
+			}
+			.svg-triangle{
+			  margin: 0 auto;
+			  width: 100px;
+			  height: 100px;    
+			}   
+
+			.svg-triangle polygon {
+			  fill:#98d02e;
+			  stroke:#65b81d;
+			  stroke-width:2;
+			}
+		</style>
+	</head>
+<body>
+	<h1>Scalable Vector Graphics with Random Colors.</h1>
+	<div style="margin:30px;">Refresh the page to see the random vector colors.</div>
+	<div id="text">
+		<svg version="1.1"
+		     baseProfile="full"
+		     xmlns="http://www.w3.org/2000/svg"
+		     xmlns:xlink="http://www.w3.org/1999/xlink"
+		     xmlns:ev="http://www.w3.org/2001/xml-events" 
+		     width="1000" height="1000" id="makeCircles">
+		</svg> 
+		<p></p>
+		<nav>
+			<a href="index.html">Back to the Learnings.</a>
+		</nav>
+	</div>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		function getRandomColor() {
+		    var letters = '0123456789ABCDEF'.split('');
+		    var color = '#';
+		    for (var i = 0; i < 6; i++ ) {
+		        color += letters[Math.floor(Math.random() * 16)];
+		    }
+		    return color;
+		}
+		console.log(getRandomColor());
+		$("circle").css({
+	    	stroke: getRandomColor(),
+	    	fill: getRandomColor()
+		});
+		var total = 50;
+		var position = 50;
+		var makeCircles = $("#makeCircles");
+		for(var i = 0; i < total; i++){
+			if(makeCircles){
+				var color = getRandomColor();
+				makeCircles.append("<svg width='1000' height='1000'><circle cx='"+ position +"' cy='"+ position +"' r='40' stroke='" + color + "' stroke-width='1' fill='" + color + "' /></svg>");
+				position = position + 20;
+			}
+		}
+	</script>
+</body>
+</html>
