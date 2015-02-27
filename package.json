@@ -1,0 +1,22 @@
+{
+  "name": "180learnings",
+  "version": "1.0.0",
+  "description": "I am excited to learn and create more websites everyday! :)",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caitlinhall/180learnings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitlinhall/180learnings/issues"
+  },
+  "homepage": "https://github.com/caitlinhall/180learnings",
+  "dependencies": {
+    "express": "^3.5.3"
+  }
+}
