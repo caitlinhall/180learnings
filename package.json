@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/caitlinhall/180learnings",
   "dependencies": {
-    "express": "^3.5.3"
+    "express": "^3.5.3",
+    "twitter": "^1.2.1"
   }
 }
