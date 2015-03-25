@@ -15,7 +15,7 @@ var client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-client.get('search/tweets', {q: '%23coding', result_type: 'popular'}, function(error, tweets, response){
+client.get('search/tweets', {q: '%23coding', result_type: 'recent'}, function(error, tweets, response){
   //console.log(error);
   if(error) throw error;
   //console.log(tweets.statuses[0].text);  // The favorites. 
