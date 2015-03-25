@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>My Site!</title>
+		<style>
+			body{
+				font-family: Arial, sans-serif;
+				color: #5f5f5f;
+				letter-spacing: 2px;
+			}
+			#text {
+				margin:30px;
+				font-size: 22px;
+			}
+			h1{
+				font-size:90px;
+				/*margin:30px;*/
+				color: #F08080;
+			}
+			.coral{
+				color: #F08080;
+				font-size: 36px;
+			}
+			dl{
+				border-top: 1px solid #5f5f5f;
+				padding-top: 30px;
+			}
+			a{
+				color: #5f5f5f;
+			}
+			.backToHome{
+				width: 100%;
+			}
+		</style>
+		<link rel="stylesheet" href="flip.css">
+	</head>
+	<body>
+		<div id="text">
+			<h1>the flip...</h1>
+			<p></p>
+			<nav>
+				<a class="backToHome" href="index.html">Back to the Learnings.</a>
+			</nav>
+			<p></p>
+
+			<div class="wrapper">
+		      <div class="col_third">
+		        <div class="hover panel">
+		          <div class="front">
+		          	<img class="box1" src="/radbomberman.jpg" alt="radsite" />
+		            <!-- <div class="box1">
+		              <p>Front Side</p>
+		            </div> -->
+		          </div>
+		          <div class="back">
+		            <div class="box2">
+		              <p>Back Side</p>
+		            </div>
+		          </div>
+		        </div>
+			</div>
+
+		</div>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<script>
+				$(document).ready(function(){
+					// set up hover panels
+					// although this can be done without JavaScript, we've attached these events
+					// because it causes the hover to be triggered when the element is tapped on a touch device
+					$('.hover').hover(function(){
+						$(this).addClass('flip');
+					},function(){
+						$(this).removeClass('flip');
+					});
+				});
+		</script>
+	</body>
+</html>
