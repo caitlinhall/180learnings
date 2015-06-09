@@ -2,6 +2,7 @@ var path = require('path');
 var express = require('express');
 var Twitter = require('twitter');
 var app = express();
+var Firebase = require("firebase");
 app.use(express.logger());
 
 // serve up files in the 'public' folder as static content
@@ -15,17 +16,18 @@ var client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
+// var myFirebaseRef = new Firebase("https://flickering-inferno-8143.firebaseio.com/");
+
+// myFirebaseRef.push({john: 'i hope this works'});
+
 client.get('search/tweets', {q: '%23coding', result_type: 'recent'}, function(error, tweets, response){
   //console.log(error);
   if(error) throw error;
-  //console.log(tweets.statuses[0].text);  // The favorites. 
-  //console.log(response);  // Raw response object. 
   var arrayLength = tweets.statuses.length;
   var tweetsArray = [];
   for(var i = 0; i <arrayLength; i++){
     tweetsArray.push(tweets.statuses[i].text)
   }
-  console.log(tweetsArray);
 
   app.get('/twitter', function (req, res, next) {
     res.send(JSON.stringify(tweetsArray));
