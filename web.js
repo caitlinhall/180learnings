@@ -17,7 +17,10 @@ var client = new Twitter({
 
 client.get('search/tweets', {q: '%23coding', result_type: 'recent'}, function(error, tweets, response){
   //console.log(error);
-  if(error) throw error;
+  if(error) {
+    console.error("I'm done :(")
+    throw error;
+  }
   var arrayLength = tweets.statuses.length;
   var tweetsArray = [];
   for(var i = 0; i <arrayLength; i++){
