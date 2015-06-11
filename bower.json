@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "180learnings",
+  "version": "1.0.0",
+  "description": "I am excited to learn and create more websites everyday! :)",
+  "homepage": "https://github.com/caitlinhall/180learnings",
   "license": "MIT",
   "private": true,
   "dependencies": {

@@ -27,8 +27,6 @@
   },
   "homepage": "https://github.com/caitlinhall/180learnings",
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
-
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1",
 
