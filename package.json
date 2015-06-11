@@ -4,8 +4,8 @@
   "description": "I am excited to learn and create more websites everyday! :)",
   "main": "web.js",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "0.10.x"
   },
   "repository": {
     "type": "git",
